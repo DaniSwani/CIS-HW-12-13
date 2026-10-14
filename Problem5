@@ -1,0 +1,47 @@
+students = {
+"Swans": [85, 91, 91],
+"James": [90, 91, 83],
+"Wilson":[78, 92, 80],
+"Brown": [94, 95, 96],
+"Harris": [87, 93, 97],
+}
+
+def calculate_averages():
+    total1 = 0
+    total2 = 0
+    total3 = 0
+    count = 0
+
+    student_averages = []
+
+    print("Student\t\tAverage")
+    print("-------------------------")
+
+    for name in students:
+        grades = students[name]
+
+        average = (grades[0] + grades[1] +
+                   grades[2]) / 3
+
+        student_averages.append([name, average])
+
+        print(name, "\t\t", format(average, ".2f"))
+
+        total1 = total1 + grades[0]
+        total2 = total2 + grades[1]
+        total3 = total3 + grades[2]
+
+        count = count + 1
+
+    avg1 = total1 / count
+    avg2 = total2 / count
+    avg3 = total3 / count
+
+    print("-------------------------")
+    print("Exam 1 Average:", format(avg1, ".2f"))
+    print("Exam 2 Average:", format(avg2, ".2f"))
+    print("Exam 3 Average:", format(avg3, ".2f"))
+
+    return student_averages
+    
+averages = calculate_averages()
