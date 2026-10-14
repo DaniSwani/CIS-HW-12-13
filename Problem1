@@ -1,0 +1,16 @@
+last_names = ["Swanigan", "Johnson", "Harris", "Brown",
+"Jones", "Davis", "McIntosh", "Wilson",
+"Jernigan", "Taylor"]
+
+def display_names():
+    for name in last_names:
+        print(name)
+def reverse_names():
+    for i in range(9, -1, -1):
+        print(last_names[i])
+        
+print("Students Last Name:")
+display_names()
+
+print("/nNames in Reverse Order:")    
+reverse_names()
