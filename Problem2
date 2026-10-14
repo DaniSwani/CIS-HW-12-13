@@ -1,0 +1,19 @@
+last_names = ["Swanigan", "Johnson", "Harris", "Brown",
+"Jones", "Davis", "McIntosh", "Wilson",
+"Jernigan", "Taylor"]
+
+scores = [85, 92, 78, 88, 95, 73, 90, 82, 87, 91]
+
+def display_students():
+    for i in range(10):
+         print(last_names[i], scores[i])
+
+def reverse_students():
+    for i in range(9, -1, -1):
+        print(last_names[i], scores[i])
+
+print("Student Name and Exam Score:")
+display_students()
+
+print("\nReverse Order:")
+reverse_students()
