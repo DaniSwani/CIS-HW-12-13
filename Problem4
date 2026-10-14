@@ -1,0 +1,26 @@
+students = {
+"Harris": 95,
+"James": 81,
+"Taylor": 77,
+"Brown": 90,
+"Swanigan": 98
+}
+
+total = 0
+count = 0
+
+print("Student Name\tGrade")
+print("-------------------------")
+
+for name in students:
+    grade = students[name]
+
+    print(name, "\t\t", grade)
+
+    total = total + grade
+    count = count + 1
+
+average = total / count
+
+print("-------------------------")
+print("Class Average:", format(average, ".2f"))
