@@ -1,0 +1,32 @@
+last_names = ["Swanigan", "Johnson", "Harris", "Brown",
+"Jones", "Davis", "McIntosh", "Wilson",
+"Jernigan", "Taylor"]
+
+scores = [82, 42, 78, 88, 95, 73, 80, 82, 87, 92]
+
+def display_scores():
+
+    high_sco = 0
+    low_sco = 999
+
+    high_index = 0
+    low_index = 0
+
+    for i in range(len(scores)):
+
+        if scores[i] > high_sco:
+            high_sco = scores[i]
+            high_index = i
+
+        if scores[i] < low_sco:
+            low_sco = scores[i]
+            low_index = i
+
+    print("Highest Score:")
+    print(last_names[high_index], high_sco)
+
+    print("Lowest Score:")
+    print(last_names[low_index], low_sco)
+
+
+display_scores()
